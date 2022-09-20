@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/images/favicon.png">
+    <!--<meta name="theme-color" content="#d9534f">-->
+	<meta name="mobile-web-app-capable" content="yes">
+    <title>Software Developer - UI/UX Designer</title>
+
+    <!--Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css plugins -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/animsition.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.min.css" rel="stylesheet">
+
+    <!-- css template -->
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/custom_style.css" rel="stylesheet">
+	<link rel="assets/js/manifest" href="manifest.json">
+
+	
+<style>
+/*
+.imageWrapper{
+	border: 3px solid #000;
+	padding: 10px;
+}*/
+</style>
+	
+</head>
+
+<body>
+	<!-- Box Window -->
+	<div class="box_bars">
+		<div class="top-bar">
+			<a href="index.html" class="link-top-site animsition-link"><img src="assets/images/logo.png" /></a>
+		</div>
+		<div class="bottom-bar"></div>
+		<div class="left-bar"></div>
+		<div class="right-bar"></div>
+	</div>
+	<!-- end Box Window -->
+
+	<!-- border box -->
+	<div class="cover-border">
+		<div class="top-mask"></div>
+		<div class="bottom-mask"></div>
+		<div class="left-mask"></div>
+		<div class="right-mask"></div>
+	</div>
+	<!-- end border box -->
+
+	<!-- loading -->
+	<!--<div class="body-loading">
+		<div class="mid-content2">
+			<div class="spinner"></div>
+		</div>
+	</div>-->
+	<!-- end loading -->
+
+	<!-- btn togle menu -->
+	<a href="#" class="trigger-menu" id="site-navigation-trigger">
+		<div class="icon-container">
+			<span class="navigation-line navigation-line01"></span>
+			<span class="navigation-line navigation-line02"></span>
+			<span class="navigation-line navigation-line03"></span>
+		</div>
+	</a>
+	<!-- end btn togle menu -->
+
+	<!-- site navigation -->
+	<div class="site-navigation" id="site-navigation-area">
+
+		<div class="navigation-bg-over nav-01 active" data-holdbg="assets/images/bg1.jpg"></div>
+		<div class="navigation-bg-over nav-02" data-holdbg="assets/images/bg2.jpg"></div>
+		<div class="navigation-bg-over nav-03" data-holdbg="assets/images/bg3.jpg"></div>
+		<div class="navigation-bg-over nav-04" data-holdbg="assets/images/bg4.jpg"></div>
+		<div class="navigation-bg-over nav-05" data-holdbg="assets/images/bg5.jpg"></div>
+
+		<div class="navigation-bg-mask">
+			<div class="cover-border">
+				<div class="top-mask"></div>
+				<div class="bottom-mask"></div>
+				<div class="left-mask"></div>
+				<div class="right-mask"></div>
+			</div>
+		</div>
+		
+		<div class="mid-content-area">
+			<div class="mid-content">
+				<div class="hidden-sc">
+					<div id="main_menu">
+						<button id="back_menu" class="btn"><i class="ti-arrow-left"></i></button>
+						<ul class="list-unstyled text-center" id="menu_area">
+							<li class="active"><a href="index.html" data-hover="nav-01" class="animsition-link">Home </a></li>
+							<li class=""><a href="about.html" data-hover="nav-02" class="animsition-link">About-Me </a></li>
+							<!--<li class=""><a href="resume.html" data-hover="nav-03" class="animsition-link">Resume </a></li>-->
+							<li class=""><a href="portfolio.html" data-hover="nav-04" class="animsition-link">Projects </a></li>
+							<li class=""><a href="contact.php" data-hover="nav-05" class="animsition-link">Contact </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- end site navigation -->
+
+    <!-- site content -->
+    <div class="site-content">
+        <div class="animsition">
+
+            <div class="scrolldown-arrow animated infinite bounce">
+                <i class="ti-angle-down"></i>
+            </div>
+            <!-- end .scrolldown-arrow -->
+
+            <!-- block full screen -->
+            <section class="page-full-window relative-pos bg-fixed bg-overfly " data-holdbg="assets/images/bg4.jpg">
+                <div class="mid-content2">
+                    <div class="container text-center color-white">
+                        <h1 class="super-big-font">Portfolio</h1>
+                        <div class="simple-line"></div>
+                        <p class="let-space-3">An organized presentation of an individual's education, work samples, and skills</p>
+                    </div>
+                </div>
+            </section>
+            <!-- end block full screen -->
+
+            <!-- blog content -->
+            <section class="bg_light">
+                <div class="padd-content">
+                    <div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 portfolioWrapper">
+									<!-- Section Title -->
+									<div class="section-title">
+										<!--<h2 class="pull-left">Portfolio</h2>-->
+										<div class="portfolio-filter pull-right">
+											<ul>
+												<li class="btn btn-cts1 btn-dark btn-m10 filter active" data-filter="all">Show All</li>
+												<li class="btn btn-cts1 btn-dark btn-m10 filter" data-filter=".category-1">Websites</li>
+												<li class="btn btn-cts1 btn-dark btn-m10 filter" data-filter=".category-2">UI Design</li>
+												<li class="btn btn-cts1 btn-dark btn-m10 filter" data-filter=".category-3">App's</li>
+												<li class="btn btn-cts1 btn-dark btn-m10 filter" data-filter=".category-4">Branding</li>
+											</ul>
+										</div>
+									</div><!-- end Section Title -->
+									<div id="mix-container" class="col-md-12">
+										<!-- Image 1 -->
+										<div class="col-xs-12 col-sm-4 mix category-1">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-1">
+													<img src="assets/images/portfolio-1.jpg" alt=""><!-- Image 1 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Mobile Tutor - E Learning Product (M-Tutor)</h3>
+															<span>Websites</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-1" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-1.jpg" alt=""><!-- Image 1 source -->
+													<div>
+														<h3>Mobile Tutor - E Learning Product (M-Tutor)</h3>
+														<p>M-Tutor delivers and reinforces your lessons even when you are outside the classroom. This ecosystem offers you a secure, modern, one-stop learning platform plus a well-designed and easy-to-use interface. The modules are made conceptual, flexible, effective, and informative and application oriented for better learning and understanding. M-Tutor allows you to go easy on curriculum with regional language support and it makes learning social and interactive with other students and faculties.<span class="pull-right"><a href="http://www.m-tutor.com/" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 2 -->
+										<div class="col-xs-12 col-sm-4 mix category-3">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-2">
+													<img src="assets/images/portfolio-7.png" alt=""><!-- Image 1 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Sportster</h3>
+															<span>App's</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-2" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-7.png" alt=""><!-- Image 1 source -->
+													<div>
+														<h3>Sportster</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a href="https://play.google.com/store/apps/details?id=com.SymbioticInfo.Sportster" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 3 -->
+										<div class="col-xs-12 col-sm-4 mix category-1 ">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-3">
+													<img src="assets/images/portfolio-2.jpg" alt=""><!-- Image 2 source -->
+													<div class="imageHover">
+														<div>
+															<h3>OCF School Alumni Association</h3>
+															<span>Websites</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-3" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-2.jpg" alt=""><!-- Image 2 source -->
+													<div>
+														<h3>OCF School Alumni Association</h3>
+														<p>OCF is a eLearning innovation that represents an innovative shift in the field of learning, providing rapid access to specific knowledge and information. It offers online instruction that can be delivered anytime and anywhere through a wide range of electronic learning solutions such as Webbased courseware, online discussion groups, live virtual classes, video and audio streaming, Web chat, online simulations, and virtual mentoring. eLearning enables organizations to transcend distance and other organizational gaps by providing a cohesive virtual learning environment. Companies must educate and train vendors, employees, partners, and clients to stay competitive, and eLearning can provide such just-in-time training in a cost-effective way.<span class="pull-right"><a href="http://www.ocfsaa.com/gateway/index.php" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 4 -->
+										<div class="col-xs-12 col-sm-4 mix category-1">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-4">
+													<img src="assets/images/portfolio-3.jpg" alt=""><!-- Image 3 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Paint Brush</h3>
+															<span>Websites</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-4" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-3.jpg" alt=""><!-- Image 3 source -->
+													<div>
+														<h3>Paint Brush</h3>
+														<p>Paintbrush is a project which deals with online selling of paintings. Trade between the authors, communication within different authors for various colors and types. User interactivity using the direct online ecommerce based, handles complete flow of selling the paintings.<span class="pull-right"><a href="http://paintbrush.ae/" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 5 -->
+										<div class="col-xs-12 col-sm-4 mix category-1">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-5">
+													<img src="assets/images/portfolio-13.jpg" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>SIH General Trading</h3>
+															<span>Websites</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-5" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-13.jpg" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>SIH General Trading</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a href="http://sihgt.com" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 5.1 -->
+										<div class="col-xs-12 col-sm-4 mix category-2">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-5">
+													<img src="assets/images/portfolio-4.jpg" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Corporate Assessment</h3>
+															<span>UI Design</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-5" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-4.jpg" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>Corporate Assessment</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 6 -->
+										<div class="col-xs-12 col-sm-4 mix category-3">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-6">
+													<img src="assets/images/portfolio-5.png" alt=""><!-- Image 2 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Mobile Tutor</h3>
+															<span>App's</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-6" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-5_1.png" alt=""><!-- Image 2 source -->
+													<div>
+														<h3>Mobile Tutor</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a href="https://play.google.com/store/apps/details?id=com.MobileTutor.mtutor" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 6 -->
+										<div class="col-xs-12 col-sm-4 mix category-3">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-7">
+													<img src="assets/images/portfolio-6.png" alt=""><!-- Image 3 source -->
+													<div class="imageHover">
+														<div>
+															<h3>OCFSAA</h3>
+															<span>App's</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-7" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-6.png" alt=""><!-- Image 3 source -->
+													<div>
+														<h3>OCFSAA</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a href="https://play.google.com/store/apps/details?id=ocfsaa.symbioticinfotech.com.ocfsaa" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 4 -->
+										<div class="col-xs-12 col-sm-4 mix category-4">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-8">
+													<img src="assets/images/portfolio-8.png" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Sportster</h3>
+															<span>Branding</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-8" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-8.png" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>Sportster</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a href="https://play.google.com/store/apps/details?id=com.SymbioticInfo.Sportster" target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										
+										<!-- Image 11 -->
+										<div class="col-xs-12 col-sm-4 mix category-2">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-9">
+													<img src="assets/images/portfolio-9.png" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>M-Tutor Wap</h3>
+															<span>Wap</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-9" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-9.png" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>M-Tutor Wap</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 12 -->
+										<div class="col-xs-12 col-sm-4 mix category-2">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-10">
+													<img src="assets/images/portfolio-10.png" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Mobile Magic</h3>
+															<span>Wap</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-10" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-10.png" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>Mobile Magic</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 13 -->
+										<div class="col-xs-12 col-sm-4 mix category-2">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-11">
+													<img src="assets/images/portfolio-11.png" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Gamezone</h3>
+															<span>Wap</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-11" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-11.png" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>Gamezone</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+										<!-- Image 11 -->
+										<div class="col-xs-12 col-sm-4 mix category-2">
+											<div class="imageWrapper">
+												<a class="lightbox" href="#popup-12">
+													<img src="assets/images/portfolio-12.png" alt=""><!-- Image 4 source -->
+													<div class="imageHover">
+														<div>
+															<h3>Entertainment</h3>
+															<span>Wap</span>
+														</div>
+													</div>
+												</a>
+												<!-- popup content -->
+												<div id="popup-12" class="mfp-hide popup-box">
+													<img src="assets/images/portfolio-12.png" alt=""><!-- Image 4 source -->
+													<div>
+														<h3>Entertainment</h3>
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.<span class="pull-right"><a target="_blank" class="btn btn-cts1 btn-dark btn-m10">Live</a></span></p>
+													</div>
+												</div>
+												<!-- end popup content -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- end row -->
+                    </div>
+                </div>
+            </section>
+            <!-- end blog content -->
+
+        </div>
+        <!-- end .animsition -->
+    </div>
+    <!-- end site content -->
+
+    <!-- site footer -->
+    <div class="site-footer">
+        <div class="text-center">Copyright &copy; 2017
+            <a href="http://mohanvadivel.com" class="black_link strong" target="_blank">mohanvadivel.com</a>
+        </div>
+    </div>
+    <!-- end site footer -->
+
+<script>
+$(document).ready(function(){
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+		$(this).removeClass("active");
+	}
+	$(this).addClass("active");
+});
+</script>
+<!-- jQuery -->	
+    <!-- jQuery -->
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <!-- jQuery plugins-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/animsition.min.js"></script>
+    <!-- template js -->
+    <script src="assets/js/app.js"></script>
+	
+	<!-- Magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Theme Plugins -->
+	<script src="assets/js/theme-plugins.min.js"></script>	
+	<!-- Custom Scripts -->
+	<script src="assets/js/scripts.min.js"></script>
+
+
+<script>
+	if ('serviceWorker' in navigator) {
+		console.log("Will service worker register?");
+		navigator.serviceWorker.register('assets/js/service-worker.js').then(function(reg){
+			console.log("Yes it did.");
+		}).catch(function(err) {
+			console.log("No it didn't. This happened: ", err)
+		});
+    }
+</script>
+	
+
+</body>
+
+</html>
